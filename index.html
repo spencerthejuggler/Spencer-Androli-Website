@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    /* Ensure the html and body fill the full viewport height */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    /* Use a flex column layout for the body */
+    body {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to top right, #c62907, black);
+    }
+    header {
+      background-color: black;
+      padding: 20px;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo {
+      height: 150px;
+    }
+    .header-top h1 {
+      margin: 0;
+      font-size: 100px;
+      color: white;
+      text-align: center;
+      flex: 1;
+    }
+    /* Dummy element to balance the logo's width on the right */
+    .dummy {
+      width: 150px;
+    }
+    /* Navigation styling */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    /* Main content styling */
+    main {
+      padding: 20px;
+    }
+    /* Footer fills the remaining space */
+    footer {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <h1>Spencer Androli</h1>
+      <div class="dummy"></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="acts.html">Acts</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>About Spencer Androli</h2>
+    <p>
+      Spencer Androli has been juggling for 15 years and is a 3x world champion juggler. He has broken multiple world records and was ranked the #1 Juggler of 2023 and #4 in 2024 on the Top 40 Jugglers of the Year Chart. He has performed for circuses and variety shows such as Teatro Zinzanni, Flynn Creek Circus, Circus Evo, Hideaway Circus, and the Moisture Festival in Seattle. He has been featured on ESPN 2 as part of an international sport juggling competition from the World Juggling Federation in Paris, France.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Spencer Androli. All rights reserved.</p>
+  </footer>
+</body>
+</html>

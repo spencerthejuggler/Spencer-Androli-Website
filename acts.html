@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acts - Spencer Androli</title>
+  <style>
+    /* Reset and full height */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    /* Body styling */
+    body {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to top right, #c62907, black);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    /* Header styling */
+    header {
+      background-color: black;
+      padding: 20px;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo {
+      height: 150px;
+    }
+    .header-top h1 {
+      margin: 0;
+      font-size: 100px;
+      text-align: center;
+      flex: 1;
+      color: white;
+    }
+    /* Dummy element to balance the logo's width on the right */
+    .dummy {
+      width: 150px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    /* Main content styling */
+    main {
+      padding: 20px;
+      flex: 1;
+    }
+    /* "Acts" header centered at top with increased size */
+    .acts-header {
+      text-align: center;
+      font-size: 72px;
+      margin-bottom: 20px;
+    }
+    /* Main content row with two columns */
+    .main-content {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    /* Left column: video embed only */
+    .video-column {
+      width: 560px;
+    }
+    .video-container {
+      width: 560px;
+    }
+    /* Use default YouTube embed dimensions */
+    .video-container iframe {
+      width: 560px;
+      height: 315px;
+      border: 0;
+    }
+    /* Right column: detailed description with video header above it */
+    .text-content {
+      flex: 1;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    /* Video header in the text column with no top margin */
+    .video-header {
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    /* Footer styling */
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <h1>Spencer Androli</h1>
+      <div class="dummy"></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="acts.html">Acts</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main header -->
+    <h1 class="acts-header">Acts</h1>
+    
+    <!-- Main content row: left column (video) and right column (description) -->
+    <div class="main-content">
+      <div class="video-column">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/QODGwIJ2LA0" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="text-content">
+        <!-- Video header moved to the right column above the description -->
+        <h3 class="video-header">Flynn Creek Circus 2023</h3>
+        <p>
+          I performed these acts in the Flynn Creek Circus 2023 summer and winter seasons. I performed the balls and ring act in the first half of the show and then the club act in the second half of the show. My character in the show was a MIB government agent that made the crowd forget about the aliens that showed up previously in the show with my neurolizer. It was truly such a fun character to play and always received an overwhelming amount of support from the audience. Throughout the pretty much 6 months of playing this character, I definitely learned so much about performing in all conditions (extreme heat, cold, rain, altitude, and exhaustion - just because we are in a tent doesn't mean those factors don't affect the act). I also throughout the tour I added some flair to the acts that really added to them. It is a slightly different act now than what it started off as. I am of course still performing this act and I have it in my pocket to perform it anywhere, although I am striving to create other acts with different feels to them rather than just a hype show-offy act.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Spencer Androli. All rights reserved.</p>
+  </footer>
+</body>
+</html>
