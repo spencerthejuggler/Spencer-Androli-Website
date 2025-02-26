@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Home Page - Spencer Androli</title>
   <style>
-    /* Ensure the html and body fill the full viewport height */
+    /* Ensure html and body fill the full viewport height */
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
     }
-    /* Use a flex column layout for the body */
+    /* Use a flex column layout and apply the gradient background */
     body {
       display: flex;
       flex-direction: column;
       background: linear-gradient(to top right, #c62907, black);
+      color: white;
+      font-family: Arial, sans-serif;
     }
+    /* Header styling */
     header {
       background-color: black;
       padding: 20px;
@@ -32,15 +35,14 @@
     .header-top h1 {
       margin: 0;
       font-size: 100px;
-      color: white;
       text-align: center;
       flex: 1;
+      color: white;
     }
-    /* Dummy element to balance the logo's width on the right */
+    /* Dummy element to balance the header layout */
     .dummy {
       width: 150px;
     }
-    /* Navigation styling */
     nav ul {
       list-style: none;
       padding: 0;
@@ -56,21 +58,57 @@
     /* Main content styling */
     main {
       padding: 20px;
-    }
-    /* Footer fills the remaining space */
-    footer {
       flex: 1;
+    }
+    main h2 {
+      margin-top: 0;
+    }
+    /* Footer styling */
+    footer {
+      background-color: black;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .footer-section {
+      margin: 10px;
+    }
+    .footer-section h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 5px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
+    }
+    .footer-section a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+    /* Social icon styling */
+    .social-icon {
+      width: 24px;
+      height: auto;
+      margin-right: 8px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
   <header>
     <div class="header-top">
+      <!-- Updated logo file -->
       <img src="assets/logo.png" alt="Logo" class="logo">
       <h1>Spencer Androli</h1>
       <div class="dummy"></div>
@@ -93,7 +131,27 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Spencer Androli. All rights reserved.</p>
+    <div class="footer-section social-media">
+      <h3>Social Media</h3>
+      <ul>
+        <li>
+          <a href="https://instagram.com/spencethejuggler" target="_blank">
+            <img src="assets/instagramlogo.png" alt="Instagram Logo" class="social-icon">
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@spencethejuggler" target="_blank">
+            <img src="assets/youtubelogo.png" alt="YouTube Logo" class="social-icon">
+            YouTube
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-section resume">
+      <h3>Resume</h3>
+      <a href="https://docs.google.com/document/d/1TxuF3X8mrlOp7MeLv7cVnPM9cu2OwUE-Rfpi72dPLHE/edit?usp=sharing" target="_blank">Download Resume</a>
+    </div>
   </footer>
 </body>
 </html>
