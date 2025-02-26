@@ -39,7 +39,7 @@
       flex: 1;
       color: white;
     }
-    /* Dummy element to balance the logo's width on the right */
+    /* Dummy element to balance the header layout */
     .dummy {
       width: 150px;
     }
@@ -66,33 +66,34 @@
       font-size: 72px;
       margin-bottom: 20px;
     }
-    /* Main content row with two columns */
-    .main-content {
+    /* Each act section: flex row with video on left and text on right */
+    .act-section {
       display: flex;
       gap: 20px;
       align-items: flex-start;
+      margin-bottom: 40px; /* space between acts */
     }
-    /* Left column: video embed only */
+    /* Left column: video embed */
     .video-column {
       width: 560px;
     }
     .video-container {
       width: 560px;
     }
-    /* Use default YouTube embed dimensions */
+    /* Default YouTube embed dimensions */
     .video-container iframe {
       width: 560px;
       height: 315px;
       border: 0;
     }
-    /* Right column: detailed description with video header above it */
+    /* Right column: header and detailed description */
     .text-content {
       flex: 1;
       text-align: left;
       font-size: 18px;
       line-height: 1.5;
     }
-    /* Video header in the text column with no top margin */
+    /* Video header in text column with no extra top margin */
     .video-header {
       font-size: 24px;
       margin-top: 0;
@@ -129,8 +130,8 @@
     <!-- Main header -->
     <h1 class="acts-header">Acts</h1>
     
-    <!-- Main content row: left column (video) and right column (description) -->
-    <div class="main-content">
+    <!-- Act Section 1 -->
+    <div class="act-section">
       <div class="video-column">
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/QODGwIJ2LA0" 
@@ -142,13 +143,33 @@
         </div>
       </div>
       <div class="text-content">
-        <!-- Video header moved to the right column above the description -->
         <h3 class="video-header">Flynn Creek Circus 2023</h3>
         <p>
           I performed these acts in the Flynn Creek Circus 2023 summer and winter seasons. I performed the balls and ring act in the first half of the show and then the club act in the second half of the show. My character in the show was a MIB government agent that made the crowd forget about the aliens that showed up previously in the show with my neurolizer. It was truly such a fun character to play and always received an overwhelming amount of support from the audience. Throughout the pretty much 6 months of playing this character, I definitely learned so much about performing in all conditions (extreme heat, cold, rain, altitude, and exhaustion - just because we are in a tent doesn't mean those factors don't affect the act). I also throughout the tour I added some flair to the acts that really added to them. It is a slightly different act now than what it started off as. I am of course still performing this act and I have it in my pocket to perform it anywhere, although I am striving to create other acts with different feels to them rather than just a hype show-offy act.
         </p>
       </div>
     </div>
+    
+    <!-- Act Section 2 -->
+    <div class="act-section">
+      <div class="video-column">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/t1nwSuHKFoY" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="text-content">
+        <h3 class="video-header">Balls Assemble Act (Rooted by Circus Evo Show)</h3>
+        <p>
+          This is an ensemble ball juggling act. I do most of the juggling but I worked alongside some other artists to create it. It was so much fun performing this act in both Hamlet and Greensboro, NC. It was created in along with a 75 minute show in a 3 week creation process. I think we did pretty good.
+        </p>
+      </div>
+    </div>
+    
   </main>
 
   <footer>
