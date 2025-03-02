@@ -4,24 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acts - Spencer Androli</title>
-  <!-- Load Bebas Neue font from Google Fonts -->
+  <!-- Load Bebas Neue font for the Acts header -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
-    /* Reset and full height */
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
     }
-    /* Body styling */
+    /* Pure black background for the entire page */
     body {
       display: flex;
       flex-direction: column;
-      background: linear-gradient(to top right, #c62907, black);
+      background: black;
       color: white;
       font-family: Arial, sans-serif;
     }
-    /* Header styling */
     header {
       background-color: black;
       padding: 20px;
@@ -57,58 +55,82 @@
       color: white;
       font-size: 18px;
     }
-    /* Main content styling */
     main {
       padding: 20px;
       flex: 1;
     }
-    /* "Acts" header shifted left with increased size and Bebas Neue font */
+    /* Acts header shifted left, using Bebas Neue */
     .acts-header {
       text-align: left;
       font-size: 72px;
       margin-bottom: 20px;
       font-family: 'Bebas Neue', sans-serif;
     }
-    /* Each act section: flex row with video on left and text on right */
     .act-section {
       display: flex;
       gap: 20px;
       align-items: flex-start;
-      margin-bottom: 40px; /* space between acts */
+      margin-bottom: 40px;
     }
-    /* Left column: video embed */
     .video-column {
       width: 560px;
     }
     .video-container {
       width: 560px;
     }
-    /* Default YouTube embed dimensions */
     .video-container iframe {
       width: 560px;
       height: 315px;
       border: 0;
     }
-    /* Right column: header and detailed description */
     .text-content {
       flex: 1;
       text-align: left;
       font-size: 18px;
       line-height: 1.5;
     }
-    /* Video header in text column with no extra top margin */
     .video-header {
       font-size: 24px;
       margin-top: 0;
       margin-bottom: 10px;
     }
-    /* Footer styling */
     footer {
+      background-color: black;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .footer-section {
+      margin: 10px;
+    }
+    .footer-section h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 5px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
+    }
+    .footer-section a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+    .social-icon {
+      width: 24px;
+      height: auto;
+      margin-right: 8px;
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -128,9 +150,7 @@
       </ul>
     </nav>
   </header>
-
   <main>
-    <!-- Main header shifted left -->
     <h1 class="acts-header">Acts</h1>
     
     <!-- Act Section 1 -->
@@ -148,7 +168,7 @@
       <div class="text-content">
         <h3 class="video-header">Flynn Creek Circus 2023</h3>
         <p>
-          I performed these acts in the Flynn Creek Circus 2023 summer and winter seasons. I performed the balls and ring act in the first half of the show and then the club act in the second half of the show. My character in the show was a MIB government agent that made the crowd forget about the aliens that showed up previously in the show with my neurolizer. It was truly such a fun character to play and always received an overwhelming amount of support from the audience. Throughout the pretty much 6 months of playing this character, I definitely learned so much about performing in all conditions (extreme heat, cold, rain, altitude, and exhaustion - just because we are in a tent doesn't mean those factors don't affect the act). I also throughout the tour I added some flair to the acts that really added to them. It is a slightly different act now than what it started off as. I am of course still performing this act and I have it in my pocket to perform it anywhere, although I am striving to create other acts with different feels to them rather than just a hype show-offy act.
+          I performed these acts in the Flynn Creek Circus 2023 summer and winter seasons. I performed the balls and ring act in the first half of the show and then the club act in the second half of the show. My character in the show was a MIB government agent that made the crowd forget about the aliens that showed up previously in the show with my neurolizer. It was truly such a fun character to play and always received an overwhelming amount of support from the audience. Throughout the pretty much 6 months of playing this character, I definitely learned so much about performing in all conditions (extreme heat, cold, rain, altitude, and exhaustion - just because we are in a tent doesn't mean those factors don't affect the act). I also throughout the tour I added some flair to the acts that really added to them. It is a slightly different act now than what it started off as.  I am of course still performing this act and I have in my pocket to perform it anywhere although I am striving to create other acts with different feels to them rather than just a hype show-offy act. 
         </p>
       </div>
     </div>
@@ -169,14 +189,83 @@
         <h3 class="video-header">Balls Assemble Act (Rooted by Circus Evo Show)</h3>
         <p>
           This is an ensemble ball juggling act. I do most of the juggling but I worked alongside some other artists to create it. It was so much fun performing this act in both Hamlet and Greensboro, NC. It was created in along with a 75 minute show in a 3 week creation process. I think we did pretty good.
+
+Hope you all enjoy this act!
+        </p>
+      </div>
+    </div>
+
+    <!-- Act Section 3 -->
+    <div class="act-section">
+      <div class="video-column">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/XA4aiOd16jU" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="text-content">
+        <h3 class="video-header">Hideaway Circus Solo Ball Juggling Act</h3>
+        <p>
+          This was an open air outdoor circus with whom I toured 5 months with. I definitely had a blast performing this act as the kind of cool high school jock character that the clown of the show looked up to. This act is definitely an act meant to highlight confidence. I had a blast performing this! I will definitely miss this act.
+          <br><br>
+          Ps. Please ignore the plane engine sounds and the chatter. We were performing beside an airport so it was kind of loud in that sense. But I rather keep the audience reactions in rather than cover them up with the audio track of music.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Act Section 4 (New Video) -->
+    <div class="act-section">
+      <div class="video-column">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/n-ZVbP7LHI8" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="text-content">
+        <h3 class="video-header">Hideaway Circus Colorful Club Juggling Act</h3>
+        <p>
+          Here is a second juggling act I would do as part of the Hideaway Circus Canvas Sky show with 4 other people. This was truly an act I always looked forward to in the show because I got to do it with other people. It was quite enjoyable and fun.
+          <br><br>
+          This act kind of acts as part of the resolution of the show where the clown starts to realize that he can shine and be cool by just being who he is with his own skills.
+          <br><br>
+          This act also has a subtle message of society and how when negativity creeps in on a group it can spread and that we must at times insert some positivity back in to bring back joy and a "colorful" and vibrant environment.
+          <br><br>
+          Either way, this act has really been a work in progress throughout the season and this was the 2nd to last show. I’d say it ended a solid act that we were so proud of.
         </p>
       </div>
     </div>
     
   </main>
-
   <footer>
-    <p>&copy; 2025 Spencer Androli. All rights reserved.</p>
+    <div class="footer-section social-media">
+      <h3>Social Media</h3>
+      <ul>
+        <li>
+          <a href="https://instagram.com/spencethejuggler" target="_blank">
+            <img src="assets/instagramlogo.png" alt="Instagram Logo" class="social-icon">
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@spencethejuggler" target="_blank">
+            <img src="assets/youtubelogo.png" alt="YouTube Logo" class="social-icon">
+            YouTube
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-section resume">
+      <h3>Resume</h3>
+      <a href="https://docs.google.com/document/d/1TxuF3X8mrlOp7MeLv7cVnPM9cu2OwUE-Rfpi72dPLHE/edit?usp=sharing" target="_blank">Download Resume</a>
+    </div>
   </footer>
 </body>
 </html>
