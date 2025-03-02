@@ -76,6 +76,7 @@
     .blog-list a:hover {
       text-decoration: underline;
     }
+    /* Footer styling (copied from Home page) */
     footer {
       background-color: black;
       padding: 20px;
@@ -91,12 +92,28 @@
       margin: 0 0 10px 0;
       font-size: 20px;
     }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+    }
     .footer-section a {
       color: white;
       text-decoration: none;
     }
     .footer-section a:hover {
       text-decoration: underline;
+    }
+    .social-icon {
+      width: 24px;
+      height: auto;
+      margin-right: 8px;
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -120,17 +137,48 @@
     <h2>Blog</h2>
     <div class="blog-list">
       <ul>
-        <li><a href="article.html">4 Key Ways to Improve Your Juggling</a></li>
+        <li>
+          <a href="blogposts/4keywaystoimproveyourjuggling.html">4 Key Ways to Improve Your Juggling</a>
+        </li>
+        <li>
+          <a href="blogposts/theconceptofbreakingdownyourjuggling.html">The Concept of Breaking Down Your Juggling</a>
+        </li>
+       <!-- To add a new article:
+       -Make a new article.html file with the title you want
+
+       -Copy everything from ExampleArticle.html to the new file
+
+       -In that file add the header you want and tell chatgpt to write the body with this prompt: "I made a new article and already have the html, please just add the body formatted in html.Here is the text:..." 
+
+       -paste that into the new file
+
+       -Update this file like below with the new html file and title you want.
+        -->
+        <!-- <li>
+          <a href="blogposts/Example.html">Example</a>
+        </li> -->
       </ul>
     </div>
   </main>
   <footer>
-    <div class="footer-section">
+    <div class="footer-section social-media">
       <h3>Social Media</h3>
-      <a href="https://instagram.com/spencethejuggler" target="_blank">Instagram</a> | 
-      <a href="https://www.youtube.com/@spencethejuggler" target="_blank">YouTube</a>
+      <ul>
+        <li>
+          <a href="https://instagram.com/spencethejuggler" target="_blank">
+            <img src="assets/instagramlogo.png" alt="Instagram Logo" class="social-icon">
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@spencethejuggler" target="_blank">
+            <img src="assets/youtubelogo.png" alt="YouTube Logo" class="social-icon">
+            YouTube
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="footer-section">
+    <div class="footer-section resume">
       <h3>Resume</h3>
       <a href="https://docs.google.com/document/d/1TxuF3X8mrlOp7MeLv7cVnPM9cu2OwUE-Rfpi72dPLHE/edit?usp=sharing" target="_blank">Download Resume</a>
     </div>
